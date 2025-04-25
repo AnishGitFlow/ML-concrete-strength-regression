@@ -56,6 +56,3 @@ Includes performance metrics for each model, visualized using bar charts.
 ## 📝 License
 
 This project is licensed under the MIT License.
-```
-
-Would you like me to generate a `.gitignore` or LICENSE file for this repo as well?
