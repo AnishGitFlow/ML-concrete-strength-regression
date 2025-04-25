@@ -1,58 +1,84 @@
-# ML-concrete-strength-regression
+# Concrete Strength Prediction
 
-# Concrete Compressive Strength Prediction
+This repository contains a Jupyter Notebook for predicting the compressive strength of concrete based on its composition and age using various machine learning models.
 
-This project predicts the compressive strength of concrete using a regression model trained on the UCI Concrete Compressive Strength dataset. It explores feature relationships, performs preprocessing, trains several models (like Linear Regression, Random Forest, etc.), and evaluates their performance.
+---
 
-## 📁 Dataset
+**Problem Statement**
 
-The dataset used is this [concrete_strength.csv](https://github.com/AnishGitFlow/ML-concrete-strength-regression/blob/main/concrete_data.csv) and contains features like:
+Predict the compressive strength of concrete using its composition (cement, slag, ash, water, superplasticizer, coarse aggregate, fine aggregate) and age.
 
-- Cement
-- Blast Furnace Slag
-- Fly Ash
-- Water
-- Superplasticizer
-- Coarse Aggregate
-- Fine Aggregate
-- Age (in days)
+---
 
-## 🚀 Project Features
+**Features**
 
-- Data cleaning and preprocessing
-- Exploratory data analysis (EDA)
-- Correlation heatmap and scatter plots
-- Multiple regression models
-- Evaluation using RMSE, R²
-- Train-test splitting and model comparison
+- Data loading and exploration
+- Data visualization
+- Preprocessing and feature scaling
+- Model training and evaluation using:
+  - Linear Regression
+  - Decision Tree Regressor
+  - Random Forest Regressor
+  - Support Vector Regressor (SVR)
+  - K-Nearest Neighbors Regressor
+  - XGBoost Regressor
+- Model comparison and performance metrics
 
-## 📦 Requirements
+---
 
-Install dependencies using:
+**Dataset**
 
-```bash
-pip install -r requirements.txt
-```
+The dataset should be in CSV format and contain the following columns:
 
-## 🧪 How to Run
+- cement
+- slag
+- ash
+- water
+- superplastic
+- coarseagg
+- fineagg
+- age
+- strength
+
+---
+
+**Usage**
 
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/AnishGitFlow/concrete_strength.git
+   cd concrete_strength
+   ```
 
-```bash
-git clone https://github.com/AnishGitFlow/concrete-strength-prediction.git
-cd concrete-strength-prediction
-```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-2. Launch the notebook:
+3. Launch the Jupyter Notebook:
+   ```bash
+   jupyter notebook concrete_strength.ipynb
+   ```
 
-```bash
-jupyter notebook concrete_strength.ipynb
-```
+4. Ensure the dataset CSV is in the same directory or update the notebook path as needed.
 
-## 📊 Model Performance
+---
 
-Includes performance metrics for each model, visualized using bar charts.
+**Requirements**
 
-## 📝 License
+See `requirements.txt` for the full list of dependencies.
 
-This project is licensed under the MIT License.
+---
+
+**Recommendations**
+
+- For reproducibility, use a virtual environment.
+- The notebook uses XGBoost, which may require additional system dependencies on some platforms.
+- To extend the project, consider adding hyperparameter tuning, feature engineering, or model explainability (e.g., SHAP values).
+- For large datasets, consider optimizing memory usage or using cloud-based notebooks.
+
+---
+
+**References**
+
+Links to reference materials are included in the notebook.
